@@ -11,5 +11,4 @@ public class CommonTestApplication {
     public static void main(String[] args) {
         SpringApplication.run(CommonTestApplication.class, args);
     }
-
 }
