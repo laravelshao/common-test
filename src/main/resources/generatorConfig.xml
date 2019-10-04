@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <context id="MysqlTables" targetRuntime="MyBatis3">
+        <!-- connectionURL 报错则添加后面属性 jdbc:mysql://localhost:3306/order?serverTimezone=Asia/Shanghai&amp;useSSL=false -->
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/dataflow"
+                        userId="root"
+                        password="123456">
+            <!-- 注意事项 http://mybatis.org/generator/usage/mysql.html -->
+            <property name="nullCatalogMeansCurrent" value="true"/>
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false"/>
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.laravelshao.common.test.model" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="mybatis" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.laravelshao.common.test.mapper" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+
+<!--        <table schema="order" tableName="t_order" domainObjectName="Order"></table>-->
+        <table schema="dataflow" tableName="all_order" domainObjectName="AllOrder"></table>
+        <table schema="dataflow" tableName="jd_order" domainObjectName="JdOrder"></table>
+        <table schema="dataflow" tableName="tmall_order" domainObjectName="TmallOrder"></table>
+
+    </context>
+</generatorConfiguration>
