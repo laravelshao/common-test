@@ -16,7 +16,7 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 @ElasticSimpleJob(jobName = "myShardingJob", cron = "0/10 * * * * ?", shardingTotalCount = 10,
-        overwrite = true, jobShardingStrategy = MyRoundRobinJobShardingStrategy.class)
+        overwrite = true, jobShardingStrategy = MyRoundRobinJobShardingStrategy.class, isJobEventTrace = true)
 public class MyShardingJob implements SimpleJob {
 
     @Override
