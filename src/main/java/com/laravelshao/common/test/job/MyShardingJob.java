@@ -4,6 +4,7 @@ import com.dangdang.ddframe.job.api.ShardingContext;
 import com.dangdang.ddframe.job.api.simple.SimpleJob;
 import com.laravelshao.common.core.annotations.ElasticSimpleJob;
 import com.laravelshao.common.core.sharding.MyRoundRobinJobShardingStrategy;
+import com.laravelshao.common.test.listener.MyNormalListener;
 import lombok.extern.slf4j.Slf4j;
 
 
@@ -16,7 +17,8 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 @ElasticSimpleJob(jobName = "myShardingJob", cron = "0/10 * * * * ?", shardingTotalCount = 10,
-        overwrite = true, jobShardingStrategy = MyRoundRobinJobShardingStrategy.class, isJobEventTrace = true)
+        overwrite = true, jobShardingStrategy = MyRoundRobinJobShardingStrategy.class,
+        isJobEventTrace = true, jobListeners = {MyNormalListener.class})
 public class MyShardingJob implements SimpleJob {
 
     @Override
