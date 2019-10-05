@@ -24,7 +24,7 @@ import static java.util.stream.Collectors.toList;
  * @date 2019/10/4
  * @since 1.0.0
  */
-@ElasticDataflowJob(jobName = "fetchThirdOrderJob", cron = "0/15 * * * * ?", shardingTotalCount = 2, overwrite = true, streamingProcess = true)
+//@ElasticDataflowJob(jobName = "fetchThirdOrderJob", cron = "0/15 * * * * ?", shardingTotalCount = 2, overwrite = true, streamingProcess = true)
 public class FetchThirdOrderJob implements DataflowJob<Object> {
 
     @Autowired

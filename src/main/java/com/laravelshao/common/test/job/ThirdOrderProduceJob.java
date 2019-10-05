@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @date 2019/10/4
  * @since 1.0.0
  */
-@ElasticSimpleJob(jobName = "thirdOrderProduceJob", cron = "0/5 * * * * ?", shardingTotalCount = 1, overwrite = true)
+//@ElasticSimpleJob(jobName = "thirdOrderProduceJob", cron = "0/5 * * * * ?", shardingTotalCount = 1, overwrite = true)
 public class ThirdOrderProduceJob implements SimpleJob {
 
     @Autowired
