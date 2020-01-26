@@ -1,7 +1,7 @@
-package com.laravelshao.common.test.mapper;
+package com.laravelshao.common.test.dal.mapper;
 
-import com.laravelshao.common.test.model.AllOrder;
-import com.laravelshao.common.test.model.AllOrderExample;
+import com.laravelshao.common.test.dal.entity.AllOrder;
+import com.laravelshao.common.test.dal.entity.AllOrderExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
 

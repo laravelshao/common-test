@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan(basePackages = "com.laravelshao.common.test.mapper")
+@MapperScan(basePackages = "com.laravelshao.common.test.dal.mapper")
 public class CommonTestApplication {
 
     public static void main(String[] args) {

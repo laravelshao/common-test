@@ -1,7 +1,7 @@
 package com.laravelshao.common.test.mapper;
 
-import com.laravelshao.common.test.model.JdOrder;
-import jdk.nashorn.internal.scripts.JD;
+import com.laravelshao.common.test.dal.entity.JdOrder;
+import com.laravelshao.common.test.dal.mapper.JdOrderMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

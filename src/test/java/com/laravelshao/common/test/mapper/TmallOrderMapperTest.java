@@ -1,6 +1,7 @@
 package com.laravelshao.common.test.mapper;
 
-import com.laravelshao.common.test.model.TmallOrder;
+import com.laravelshao.common.test.dal.entity.TmallOrder;
+import com.laravelshao.common.test.dal.mapper.TmallOrderMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

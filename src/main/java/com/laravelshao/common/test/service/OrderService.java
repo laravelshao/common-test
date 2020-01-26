@@ -1,13 +1,13 @@
 package com.laravelshao.common.test.service;
 
-import com.laravelshao.common.test.mapper.AllOrderMapper;
-import com.laravelshao.common.test.mapper.JdOrderMapper;
-import com.laravelshao.common.test.mapper.OrderMapper;
-import com.laravelshao.common.test.mapper.TmallOrderMapper;
-import com.laravelshao.common.test.model.AllOrder;
-import com.laravelshao.common.test.model.JdOrder;
-import com.laravelshao.common.test.model.Order;
-import com.laravelshao.common.test.model.TmallOrder;
+import com.laravelshao.common.test.dal.mapper.AllOrderMapper;
+import com.laravelshao.common.test.dal.mapper.JdOrderMapper;
+import com.laravelshao.common.test.dal.mapper.OrderMapper;
+import com.laravelshao.common.test.dal.mapper.TmallOrderMapper;
+import com.laravelshao.common.test.dal.entity.AllOrder;
+import com.laravelshao.common.test.dal.entity.JdOrder;
+import com.laravelshao.common.test.dal.entity.Order;
+import com.laravelshao.common.test.dal.entity.TmallOrder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

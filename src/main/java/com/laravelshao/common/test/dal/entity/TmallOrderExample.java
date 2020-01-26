@@ -1,4 +1,4 @@
-package com.laravelshao.common.test.model;
+package com.laravelshao.common.test.dal.entity;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

@@ -1,7 +1,7 @@
-package com.laravelshao.common.test.mapper;
+package com.laravelshao.common.test.dal.mapper;
 
-import com.laravelshao.common.test.model.TmallOrder;
-import com.laravelshao.common.test.model.TmallOrderExample;
+import com.laravelshao.common.test.dal.entity.TmallOrder;
+import com.laravelshao.common.test.dal.entity.TmallOrderExample;
 
 import java.util.List;
 

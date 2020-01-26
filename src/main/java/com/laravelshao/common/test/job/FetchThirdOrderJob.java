@@ -2,12 +2,11 @@ package com.laravelshao.common.test.job;
 
 import com.dangdang.ddframe.job.api.ShardingContext;
 import com.dangdang.ddframe.job.api.dataflow.DataflowJob;
-import com.laravelshao.common.core.annotations.ElasticDataflowJob;
-import com.laravelshao.common.test.mapper.JdOrderMapper;
-import com.laravelshao.common.test.mapper.TmallOrderMapper;
-import com.laravelshao.common.test.model.AllOrder;
-import com.laravelshao.common.test.model.JdOrder;
-import com.laravelshao.common.test.model.TmallOrder;
+import com.laravelshao.common.test.dal.mapper.JdOrderMapper;
+import com.laravelshao.common.test.dal.mapper.TmallOrderMapper;
+import com.laravelshao.common.test.dal.entity.AllOrder;
+import com.laravelshao.common.test.dal.entity.JdOrder;
+import com.laravelshao.common.test.dal.entity.TmallOrder;
 import com.laravelshao.common.test.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.CollectionUtils;

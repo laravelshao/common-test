@@ -2,7 +2,7 @@ package com.laravelshao.common.test.controller;
 
 import com.laravelshao.common.core.handler.StrategyHandler;
 import com.laravelshao.common.test.strategy.SelectStrategy;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoController {
 
-    @PostMapping("/test")
+    @GetMapping("/test")
     public void test() {
 
         SelectStrategy yanxuan = StrategyHandler.getBean(SelectStrategy.class, "yanxuan");

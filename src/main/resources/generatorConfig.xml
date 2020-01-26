@@ -19,16 +19,16 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="com.laravelshao.common.test.model" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.laravelshao.common.test.dal.entity" targetProject="generator">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="mybatis" targetProject="src/main/resources">
+        <sqlMapGenerator targetPackage="mybatis" targetProject="generator">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.laravelshao.common.test.mapper" targetProject="src/main/java">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.laravelshao.common.test.dal.mapper" targetProject="generator">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
 
