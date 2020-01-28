@@ -34,8 +34,10 @@ public class SwaggerConfig {
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .apiInfo(apiInfo()).select()
-                .apis(RequestHandlerSelectors.basePackage("com.laravelshao.common.test"))
+                .groupName("api")
+                .apiInfo(apiInfo())
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("com.laravelshao.common.test.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

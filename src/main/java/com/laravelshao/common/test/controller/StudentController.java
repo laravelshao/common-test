@@ -32,7 +32,7 @@ public class StudentController {
         this.studentDao = studentDao;
     }
 
-    @ApiOperation(value = "创建学生", notes = "根据BaseStudentDTO对象创建学生")
+    @ApiOperation(value = "创建学生")
     @ApiImplicitParam(name = "student", value = "学生详细实体student", required = true, dataType = "BaseStudentDTO")
     @PostMapping(value = "/api/students/createStudent", produces = {MediaType.APPLICATION_JSON_UTF8_VALUE})
     public Observable<Success> createStudent(@RequestBody BaseStudentDTO student) {
@@ -40,7 +40,7 @@ public class StudentController {
         return studentDao.createStudent(student);
     }
 
-    @ApiOperation(value = "查询学生", notes = "根据姓名查询学生")
+    @ApiOperation(value = "查询学生")
     @ApiImplicitParam(name = "姓名", value = "学生姓名", required = true, dataType = "String")
     @GetMapping(value = "/api/students/getStudentByName", produces = {MediaType.APPLICATION_JSON_UTF8_VALUE})
     public Observable<StudentDTO> getStudentByName(@RequestParam String name) {
