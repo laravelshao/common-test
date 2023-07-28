@@ -21,7 +21,7 @@
         <elastic-job.version>2.1.5</elastic-job.version>
         <slf4j-api.version>1.7.25</slf4j-api.version>
         <slf4j-log4j12.version>1.7.9</slf4j-log4j12.version>
-        <mysql-connector-java.version>8.0.17</mysql-connector-java.version>
+        <mysql-connector-java.version>8.0.28</mysql-connector-java.version>
         <mybatis-spring-boot-starter.version>2.1.0</mybatis-spring-boot-starter.version>
         <lombok.version>1.16.16</lombok.version>
         <guava.version>29.0-jre</guava.version>
