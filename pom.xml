@@ -27,7 +27,7 @@
         <guava.version>32.0.0-jre</guava.version>
         <mongodb-driver-rx.version>1.5.0</mongodb-driver-rx.version>
         <swagger.version>2.9.2</swagger.version>
-        <swagger-ui.version>2.9.2</swagger-ui.version>
+        <swagger-ui.version>2.10.0</swagger-ui.version>
         <jaxb-api.version>2.3.0</jaxb-api.version>
     </properties>
 
